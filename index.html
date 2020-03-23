@@ -1,11 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <head>
+        <title>Restaurang Burgarn</title>
+        <meta charset="UTF-8">
+        <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/normalize.css">
+	    <link rel="stylesheet" href="css/ideal-image-slider.css">
+        <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="menuToggle">
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <div class="menuList">
+                <a href="#">Hem</a>
+                <a href="meny.html">Meny</a>
+                <a href="historia.html">Historia</a>
+                <a href="recensioner.html">Recensioner</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+        <nav>
+            <img src="img/food.png" height="100" width="100">
+            <ul>
+                <li>
+                    <a href="#" class="active">
+                        Hem
+                    </a>
+                </li>
+                <li>
+                    <a href="meny.html">
+                        Meny
+                    </a>
+                </li>
+                <li>
+                    <a href="historia.html">
+                        Historia
+                    </a>
+                </li>
+                <li>
+                    <a href="recensioner.html">
+                        Recensioner
+                    </a>
+                </li>
+                <li>
+                    <a href="kontakt.html">
+                        Kontakt
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div id="container">
+            <h1 class="header">Olav Burgerz</h1>
+            <div class="border"></div>
+            <div class="starttext-container">
+                <p>Restaurang Olav Burgerz har funnits sedan 1990 och har sedan dess varit ledande inom svenska hamburgarrestauranger</p>
+                <h3>Dagens Lunch - 50:-</h3>
+                <p>Är du osäker på vad du vill äta idag?</p>
+                <a href="meny.html" class="button1">Meny</a>
+            </div>
+            <div class="slidr">
+                <div id="slider">
+                    <img src="img/1.jpg" data-src-2x="img/1@2x.jpg" alt="Slide 1" />
+                    <img src="img/2.jpg" data-src-2x="img/2@2x.jpg" alt="Slide 2" />
+                    <img src="img/3.jpg" data-src-2x="img/3@2x.jpg" alt="Slide 3" />
+                    <img src="img/4.jpg" data-src-2x="img/4@2x.jpg" alt="Slide 4" />
+                    <img src="img/5.jpg" data-src-2x="img/5@2x.jpg" alt="Slide 5"/>
+
+                    <script src="js/ideal-image-slider.js"></script>
+                    <script>
+                        var slider = new IdealImageSlider.Slider('#slider');
+                        slider.start();
+                    </script>
+                </div>
+            </div>
+        </div>
     
-</body>
+        <footer id="footer">
+            <h3> &copy; Designed by Mathias Johansen </h3>
+        </div>
+    </body>
 </html>
