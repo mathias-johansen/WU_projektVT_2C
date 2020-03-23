@@ -1,0 +1,245 @@
+html 
+{
+  height: 100%;
+  scroll-behavior: smooth; 
+}
+
+body 
+{
+  background-color: #F1EEE9;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 1rem;
+  font-family: "Open Sans";
+}
+
+div 
+{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; 
+}
+
+a 
+{
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav
+{
+  text-align: right;
+  height: 100px;
+  line-height: 100px;
+  background-color: #090b28;
+  font-family: 'Open Sans'; 
+}
+
+nav ul
+{
+  margin: 0 30px 0 0;
+}
+
+nav ul li
+{
+  display: inline;
+}
+
+nav ul li a
+{
+  text-decoration: none;
+  color: #fffafa;
+  margin: 0 35px;
+  line-height: 100px;
+  display: inline;
+  font-size: 25px;
+}
+
+nav img
+{
+  transition: .5s;
+  padding-left: 100px;
+  float: left;
+}
+
+nav ul li a:hover
+{
+  color: #A8A8A8
+}
+
+.active
+{
+  color: #A8A8A8;
+}
+
+label
+{
+  display: none;
+}
+
+#toggle
+{
+  display: none;
+}
+
+@media (max-width: 1050px)
+{
+	nav
+	{
+	  display: none;
+	}
+	
+	#menuToggle
+	{
+		display: block;
+		text-align: center;
+		width: 100%;
+		background-color: #090b28;
+	}
+	
+	.menuList
+	{
+		text-align: center;
+		width: 100%;
+		display: none;
+		background-color: #10162b;
+	}
+	
+	.menuList a
+	{
+    	color: #fffafa;
+		text-decoration: none;
+		border-bottom: 1px solid #fffafa;
+		display: block;
+		margin: 0;
+		line-height: 70px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 20px;
+	}
+	
+	.menuList a:first-child
+	{
+
+		border-top: 1px solid #fffafa;
+	}
+	
+	label
+	{
+		margin: 0;
+		font-size: 45px;
+		text-align: center;
+		line-height: 70px;
+		display: block;
+		cursor: pointer;
+		color: #fffafa;
+	}
+	
+	#toggle
+	{
+		display: none;
+	}
+	
+	#toggle:checked + .menuList
+	{
+		display: block;
+	}
+}
+
+@media (min-width: 1050px)
+{
+	#menuToggle
+	{
+		display: none;
+	}
+}
+
+#container
+{
+	min-height: 100%;
+	overflow: auto;
+}
+
+.recension-container
+{
+	display: grid;
+	grid-template-columns: 28% 28% 28%;
+	grid-column-gap: 30px;
+	grid-row-gap: 70px;
+	justify-content: center;
+	padding-bottom: 50px;
+	margin-bottom: 35px;
+}
+
+@media (max-width: 1050px)
+{
+	.recension-container
+	{
+		grid-column-gap: 10px;
+		grid-template-columns: 45% 45%;
+	}
+}
+
+.recension-container > div
+{
+	padding-bottom: 50px;
+	background: #fffafa;
+	padding: 20px;
+}
+
+.recension-container > div:nth-child(odd)
+{
+	background: #686868;
+	color: #fffafa;
+}
+
+h1.header
+{
+	font-size: 48px;
+  	color: #090b28;
+  	text-align: center;
+  	margin-top: 60px;
+}
+
+.border
+{
+  height: 5px;
+  width: 100px;
+  background: #090b28;
+  margin: 20px auto;
+}
+
+#footer
+{
+  margin: 0;
+  padding: 0; 
+  background-color: #090b28;
+  color: #fffafa;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  float: bottom;
+  position: relative;
+  margin-top: -50px;
+  clear: both;
+}
+
+@media (max-width: 325px) 
+{
+	#footer h3
+	{
+		font-size: 10px;
+	}
+}
+
+#footer h3
+{
+  float: right;
+  margin: 0;
+  padding-top: 15px;
+  padding-right: 30px;
+}
