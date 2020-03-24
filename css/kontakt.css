@@ -245,6 +245,27 @@ textarea.contact-form-text
   background: #2980b9;
 }
 
+@media (max-width: 400px) 
+{
+	#footer a
+	{
+		font-size: 10px;
+	}
+}
+
+#footer a
+{
+	color: white;
+	padding-left: 10px;
+	padding-top: 30px;
+	margin: 0;
+}
+
+#footer a:hover
+{
+	color: gray;
+}
+
 #footer
 {
   margin: 0;
